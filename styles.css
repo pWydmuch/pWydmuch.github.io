@@ -1,6 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .container{
-    border: 5px red;
-    outline: dotted darkblue;
-    width: 10px;
-    height: 20px;
+    text-align: center;
+    border: 5px red solid;
+    /* width: 10px; */
+    /* height: 20px; */
 }
