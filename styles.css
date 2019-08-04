@@ -9,3 +9,41 @@
     /* width: 10px; */
     /* height: 20px; */
 }
+
+nav{
+    background-color: #fff;
+    text-align: right;
+}
+
+.menu{
+    list-style-type: none;
+}
+
+.menu > li{
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* margin: 0 auto; */
+    /* float: right; */
+}
+
+.menu a{
+    text-decoration: none;
+    color: #515151;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.menu a:hover{
+    color: #ff9a3d;
+}
+
+footer{
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    /* background-color: #000; */
+    
+}
