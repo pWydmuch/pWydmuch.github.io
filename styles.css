@@ -11,13 +11,13 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #e7edee;
+    background-color: #f1f7f7;
 }
 
 .container {
-    text-align: center;
+    /* text-align: center; */
     /* border: 5px red solid; */
-    clear: both;
+    /* clear: both; */
 }
 
 nav {
@@ -116,6 +116,7 @@ nav {
     /* margin: 20px 0px; */
     background-color: var(--bg-color);
     height: 175px;
+    text-align: center;
     /* border: red solid 1px; */
 }
 
@@ -123,7 +124,7 @@ nav {
     margin: 20px 30px;
 }
 
-.contact-me-btn {
+.check-cv-btn {
     -webkit-border-radius: 15;
     -moz-border-radius: 15;
     border-radius: 15px;
@@ -135,7 +136,7 @@ nav {
     text-decoration: none;
 }
 
-.check-cv-btn{
+.contact-me-btn{
     
     background-image: -webkit-linear-gradient(deg(90), var(--main-color), #b85c2b);
     background-image: -moz-linear-gradient(top, #d9d934, #b85c2b);
@@ -151,10 +152,81 @@ nav {
     /* text-decoration: none; */
 }
 
-.about-me{
+.about-me{  
     background-color:var(--bg-color);
     margin: 20px 40px;
-    border: red solid 1px;
+    display: flex;
+    line-height: 200%;
+    justify-content: center;
+   
+}
+
+
+
+.my-photo img{
+    border-radius: 50% ;
+    width:75px;
+    height: 75px;
+    margin-right: 20px;
+    margin-left: 10px;
+
+}
+
+
+.personal{
+    padding-right: 20px;
+    border-right: dashed var(--main-color) 3px; 
+    flex: 1;
+}
+
+.personal + div{
+    flex: 2;
+}
+
+.about-me ul{
+    list-style-type: none;
+    font-weight: 700;
+    text-align: left;
+}
+
+
+.about-me p{
+    text-align: left;
+}
+
+.about-me span{
+    color: var(--main-color);
+    
+}
+
+.skills{
+    background-color:var(--bg-color);
+    margin: 20px 40px;
+}
+
+.skills-items{
+    display: flex;
+    text-align: center;
+    
+}
+
+.skill-item{
+    flex: 1;
+}
+
+.skill-item img{
+    /* flex: 1; */
+    width: 100px;
+    height: 100px;
+}
+.skill-item p:nth-child(2){
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+form{
+    /* display:inline-block; */
 }
 
 footer {
