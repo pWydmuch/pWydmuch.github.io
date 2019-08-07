@@ -3,15 +3,22 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Portfolio</title>
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="css/fontello.css">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
     <nav>
+      <div class="menu-icon">
+        <i class="demo-icon icon-list"></i>
+      </div>
       <div id="logo-text" class="nav-elem">
         <img class="logo" src="images/comp.png" alt="logo">
         <p>Dev<p>
@@ -23,131 +30,151 @@
         <li class="nav-elem"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <!-- <div class="container"> -->
+    <div class="big-image-container">
+      <div class="hello">
+        <h2 class="greeting">Welcome!</h2>
+        <h4 class="introduction">My name is Patryk</h4>
+        <div class="social-media">
+          <a href="#"> <img src="images/twitter.png" alt="twitter"></a>
+          <a href="#"> <img src="images/linkedin.png" alt="linkedin"></a>
+          <a href="#"> <img src="images/github.png" alt="github"></a>
+          <a href="#"> <img src="images/facebook.png" alt="facebook"></a>
+        </div>
+      </div>
+
+      <!-- <img id="architecture" src="images/architecture.jpg"> -->
+      <!-- </div> -->
   </header>
 
-  <div class="container">
-    <div class="big-image-container">
-      <h2 class="greeting">Welcome!</h2>
-      <h4 class="introduction">My name is Patryk</h4>
-      <div class="social-media">
-        <a href="#"> <img src="images/twitter.png" alt="twitter"></a>
-        <a href="#"> <img src="images/linkedin.png" alt="linkedin"></a>
-        <a href="#"> <img src="images/github.png" alt="github"></a>
-        <a href="#"> <img src="images/facebook.png" alt="facebook"></a>
-      </div>
-      <img id="architecture" src="images/architecture.jpg">
-    </div>
+
+  <div class="help">
     <div class="help-container">
       <h2>I am happy to help you with any problem!</h2>
-      <button class="help-section-btn">Contact me!</button>
-      <button class="help-section-btn">Check my CV</button>
+      <a href="#"> <button class="help-section-btn">Contact me!</button></a>
+      <a href="#"> <button class="help-section-btn">Check my CV</button></a>
     </div>
-    <h2>About me</h2>
-    <section id="about-me" class="about-me">
-      <div class="my-photo">
-        <img src="images/architecture.jpg">
+  </div>
+  <h2 class="section-marker" id="about-me">About me</h2>
+  <section class="about-me">
+    <div class="my-photo">
+      <img src="images/architecture.jpg">
+    </div>
+    <div class="personal">
+      <ul>
+        <li>Full Name: <span>Patryk Wydmuch</span></li>
+        <li>Age: <span>21 years</span></li>
+        <li>Profile: <span>Fullstack</span></li>
+        <li>Telephone: <span>123-456-789</span></li>
+        <li>Email: <span>lorem@lorem.pl</span></li>
+      </ul>
+    </div>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus veritatis modi explicabo illum officiis
+        voluptatum tenetur unde, odit repudiandae commodi nemo laborum perferendis saepe dolores nobis iste ex eos
+        velit dignissimos eveniet! Blanditiis cum est sunt repellendus maxime perferendis laborum sit unde, a eaque
+        dolores, iusto id corrupti nulla beatae! Architecto, dolorem distinctio! Optio similique fuga eos iste
+        doloremque consequuntur exercitationem deleniti necessitatibus neque.
+      </p>
+    </div>
+  </section>
+  <h2 class="section-marker" id="skills">Skills</h2>
+  <section class="skills">
+    <div class="skills-items">
+      <div class="skill-item">
+        <img src="images/ux-ui.png" alt="ux/ui">
+        <p>UX/UI</p>
+        <p>Figma</p>
       </div>
-      <div class="personal">
-        <ul>
-          <li>Full Name: <span>Patryk Wydmuch</span></li>
-          <li>Age: <span>21 years</span></li>
-          <li>Profile: <span>Fullstack</span></li>
-          <li>Telephone: <span>123-456-789</span></li>
-          <li>Email: <span>lorem@lorem.pl</span></li>
-        </ul>
+      <div class="skill-item">
+        <img src="images/frontend.png" alt="frontend">
+        <p>Front End</p>
+        <p>Html, CSS, JavaScript</p>
       </div>
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus veritatis modi explicabo illum officiis
-          voluptatum tenetur unde, odit repudiandae commodi nemo laborum perferendis saepe dolores nobis iste ex eos
-          velit dignissimos eveniet! Blanditiis cum est sunt repellendus maxime perferendis laborum sit unde, a eaque
-          dolores, iusto id corrupti nulla beatae! Architecto, dolorem distinctio! Optio similique fuga eos iste
-          doloremque consequuntur exercitationem deleniti necessitatibus neque. Laudantium eos est molestiae quam
-          numquam quisquam error accusamus incidunt nostrum!
-        </p>
+      <div class="skill-item">
+        <img src="images/backend.png" alt="backend">
+        <p>Back End</p>
+        <p>Java, Node.js</p>
       </div>
-    </section>
-    <h2>Skills</h2>
-    <section id="skills" class="skills">
-      <div class="skills-items">
-        <div class="skill-item">
-          <img src="images/ux-ui.png" alt="ux/ui">
-          <p>UX/UI</p>
-          <p>Figma</p>
-        </div>
-        <div class="skill-item">
-          <img src="images/frontend.png" alt="frontend">
-          <p>Front End</p>
-          <p>Html, CSS, JavaScript</p>
-        </div>
-        <div class="skill-item">
-          <img src="images/backend.png" alt="backend">
-          <p>Back End</p>
-          <p>Java, Node.js</p>
-        </div>
-      </div>
+    </div>
 
-    </section>
-    <h2>Portfolio</h2>
-    <section id="portfolio">
-      <div class="portfolio-item photo-1"></div>
-      <div class="portfolio-item photo-2"></div>
-      <div class="portfolio-item photo-3"></div>
-      <div class="portfolio-item photo-4"></div>
-      <div class="portfolio-item photo-5"></div>
-    </section>
-    <h2>Contact me</h2>
-    <section id="contact">
-      <div class="signupSection">
-        <div class="info">
-          <div class="info-top">
-            <img src="images/paper-plane.png">
-            <p>Please describe your question.
-              Send me a message and I will answer you as soon as posible
-            </p>
-          </div>
-          <div class="info-bottom">
-            <div class="social-media-info">
-              <a href="#"> <img src="images/twitter.png" alt="twitter"></a>
-              <a href="#"> <img src="images/linkedin.png" alt="linkedin"></a>
-              <a href="#"> <img src="images/github.png" alt="github"></a>
-              <a href="#"> <img src="images/facebook.png" alt="facebook"></a>
-            </div>
-            <ul>
-              <li><b>Patryk Wydmuch</b></li>
-              <li><b>Poland, Wrocław</b></li>
-              <li>ul. Tęczowa 12/3 50-000</li>
-              <li>+48 123-456-789</li>
-              <li>lorem@lorem.pl</li>
-            </ul>
-          </div>
+  </section>
+  <h2 class="section-marker" id="portfolio">Portfolio</h2>
+  <section class="portfolio">
+    <div class="portfolio-item photo-1">
+      <div class="p1">
+      <h3>Design</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magni tempora provident nisi unde aliquam fugit,
+        id praesentium quidem quod voluptates error possimus dolore porro vitae eaque molestiae aperiam inventore?
+      </p>
+      <a href="#"><button class="design">View</button></a>
+      </div>
+    </div>
+    <div class="portfolio-item photo-2"></div>
+    <div class="portfolio-item photo-3"></div>
+    <div class="portfolio-item photo-4">
+      <div class="p4">
+      <h3>Design project</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id minima natus tempora adipisci harum a culpa non
+        totam nisi sit!
+      </p>
+      <a href="#"><button class="design">View</button></a>
+      </div>
+    </div>
+    <div class="portfolio-item photo-5"></div>
+  </section>
+  <h2 class="section-marker" id="contact">Contact me</h2>
+  <section class="contact">
+    <div class="signupSection">
+      <div class="info">
+        <div class="info-top">
+          <img src="images/paper-plane.png">
+          <p>Please describe your question.
+            Send me a message and I will answer you as soon as posible
+          </p>
         </div>
-        <form action="#" method="POST" class="signupForm" name="signupform">
-          <h2><b>Let's start!</b></h2>
-          <ul class="noBullet">
-            <li>
-              <input type="text" class="inputFields" id="username" name="username" placeholder="Name" value=""
-                required />
-            </li>
-            <li>
-              <input type="email" class="inputFields" id="email" name="email" placeholder="Your e-mail adress" value=""
-                required />
-            </li>
-            <li>
-              <input type="text" class="inputFields" name="topic" placeholder="Topic">
-            </li>
-            <li>
-              <textarea class="inputFields" placeholder="Message"></textarea>
-            </li>
-            <li id="center-btn">
-              <input type="submit" id="send-btn" name="send" alt="Send" value="Send">
-            </li>
+        <div class="info-bottom">
+          <div class="social-media-info">
+            <a href="#"> <img src="images/twitter.png" alt="twitter"></a>
+            <a href="#"> <img src="images/linkedin.png" alt="linkedin"></a>
+            <a href="#"> <img src="images/github.png" alt="github"></a>
+            <a href="#"> <img src="images/facebook.png" alt="facebook"></a>
+          </div>
+          <ul>
+            <li><b>Patryk Wydmuch</b></li>
+            <li><b>Poland, Wrocław</b></li>
+            <li>ul. Tęczowa 12/3 50-000</li>
+            <li>+48 123-456-789</li>
+            <li>lorem@lorem.pl</li>
           </ul>
-        </form>
+        </div>
       </div>
-
+      <form action="#" method="POST" class="signupForm" name="signupform">
+        <h2><b>Let's start!</b></h2>
+        <ul class="noBullet">
+          <li>
+            <input type="text" class="inputFields" id="username" name="username" placeholder="Name" value="" required />
+          </li>
+          <li>
+            <input type="email" class="inputFields" id="email" name="email" placeholder="Your e-mail adress" value=""
+              required />
+          </li>
+          <li>
+            <input type="text" class="inputFields" name="topic" placeholder="Topic">
+          </li>
+          <li>
+            <textarea class="inputFields" placeholder="Message"></textarea>
+          </li>
+          <li id="center-btn">
+            <input type="submit" id="send-btn" name="send" alt="Send" value="Send">
+          </li>
+        </ul>
       </form>
-    </section>
+    </div>
+
+    </form>
+  </section>
 
   </div>
 
@@ -155,6 +182,16 @@
   <footer>
     Copyrights &copy; 2019 Patryk Wydmuch
   </footer>
+
+  <script>
+    $(window).on("scroll", () => {
+      if ($(window).scrollTop()) {
+        $('nav').addClass('white');
+      } else {
+        $('nav').removeClass('white');
+      }
+    })
+  </script>
 </body>
 
 </html>
