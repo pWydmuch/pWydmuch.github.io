@@ -592,6 +592,7 @@ textarea::-webkit-input-placeholder {
     padding: 10px 30px;
     cursor: pointer;
     transition: .4s;
+    margin-bottom: 10px;
 
 }
 
