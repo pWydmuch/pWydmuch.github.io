@@ -72,7 +72,7 @@ nav.white {
     text-decoration: none;
     color: #515151;
     font-weight: 700;
-    font-size: calc(10vw +10px);
+    font-size: calc(6vw +10px);
 }
 
 .nav-elem {
@@ -180,17 +180,17 @@ nav.white {
 @keyframes text {
     0% {
 
-        margin-bottom: -40px;
+        margin-bottom: -20px;
     }
 
     30% {
-        letter-spacing: 25px;
-        margin-bottom: -40px;
+        letter-spacing: calc(2vw + 20px)px;
+        margin-bottom: -20px;
     }
 
     85% {
-        letter-spacing: 8px;
-        margin-bottom: -40px;
+        letter-spacing: 6px;
+        margin-bottom: -20px;
     }
 }
 
@@ -269,25 +269,47 @@ nav.white {
     box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, .5);
 }
 
+.me-info{
+    flex: 1 4 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-right: dashed var(--main-color) 3px;
+}
+
 .my-photo img {
     border-radius: 50%;
     width: 90px;
     height: 90px;
     margin-right: 20px;
     margin-left: 25px;
+    margin-top: 10px;
 
 }
 
 .personal {
 
-    border-right: dashed var(--main-color) 3px;
-    flex: 1;
+    
+    /* flex: 1; */
     flex-basis: auto;
 }
 
-.personal+div {
-    flex: 2;
-    flex-basis: auto;
+.me-info+div {
+    flex: 1 1 60%;
+    /* flex-basis: auto; */
+}
+
+@media screen and (max-width: 850px){
+    .about-me{
+        flex-direction: column;
+    }
+    .me-info{
+        border-right: none;
+        border-bottom:  dashed var(--main-color) 3px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
 }
 
 .about-me ul {
@@ -319,8 +341,8 @@ nav.white {
 
 .skills-items {
     width: 100%;
-    border: solid blue 2px;
     display: flex;
+    /* flex-direction: column; */
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-around;
@@ -329,22 +351,23 @@ nav.white {
 
 .skill-item {
     
-    flex: 1 1 auto;
-    border: solid red 1px;
+    flex: 1 1 200px;
     text-align: center;
 }
 
-/* .skill-item:nth-of-type(1),
+
+
+
+.skill-item:nth-of-type(1),
 .skill-item:nth-of-type(2) {
     border-right: dashed var(--main-color) 3px;
-} */
+}
 
 .skill-item img {
-    /* flex: 1 0 12em; */
+    margin-top: 10px;
     width: 100px;
     height: 100px;
-    /* margin-top 30px; */
-    /* margin-bottom: 30px; */
+
 }
 
 .skill-item p:first-of-type {
@@ -356,6 +379,35 @@ nav.white {
     font-weight: 700;
     font-size: 20px;
 }
+
+@media screen and (max-width: 732px){
+    .skill-item:nth-of-type(2){
+        border-right: none;
+    }
+    .skill-item:nth-of-type(3){
+        margin-top: 10px;
+        border-top: dashed var(--main-color) 3px;;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .skills-items{
+        flex-direction: column;
+        
+    }
+    .skill-item:nth-of-type(1){
+        border-right: none;
+        
+    }
+    .skill-item:nth-of-type(2){
+       
+        border-top: dashed var(--main-color) 3px;
+    }
+    .skill-item:nth-of-type(3){
+        border-top: dashed var(--main-color) 3px;
+    }
+}
+
 /* Portfolio section */
 .portfolio {
 
@@ -411,7 +463,6 @@ nav.white {
 }
 
 .portfolio .design{
-    /* margin: 20px 30px;   */
     margin-top: 20px;
     background-image: linear-gradient(to right, var(--second-color), var(--main-color));
     cursor: pointer;
@@ -532,12 +583,9 @@ nav.white {
 }
 
 .form {
-    /* width: 60%; */
     flex: 5;
     flex-basis: auto;
-    /* padding: 30px 0; */
     color: black;
-    /* background: rgba(20, 40, 40, .8); */
     transition: .2s;
 
 }
