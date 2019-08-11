@@ -167,6 +167,7 @@ nav.white {
 
 
 .help h2 {
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -207,6 +208,7 @@ nav.white {
 
 .me-info {
     flex: 1 4 30%;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -228,8 +230,24 @@ nav.white {
     flex-basis: auto;
 }
 
+.personal ul {
+    margin-left: 20px;
+    list-style-type: none;
+    font-weight: 700;
+    text-align: left;
+}
+
+.personal span {
+    color: var(--main-color);
+
+}
+
 .me-description {
     flex: 1 1 60%;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width: 850px) {
@@ -245,24 +263,10 @@ nav.white {
     }
 }
 
-.about-me ul {
-    margin-left: 20px;
-    list-style-type: none;
-    font-weight: 700;
-    text-align: left;
-}
 
 
-.about-me p {
-    text-align: left;
-    margin-left: 20px;
-    margin-right: 30px;
-}
 
-.about-me span {
-    color: var(--main-color);
 
-}
 
 /* Skills section */
 .skills {
@@ -292,7 +296,7 @@ nav.white {
 }
 
 .skill-item img {
-    margin-top: 10px;
+    margin-top: 20px;
     width: 100px;
     height: 100px;
 }
@@ -448,8 +452,7 @@ nav.white {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 4;
-    flex-basis: aoto;
+    flex: 5 6 200px;
     background: var(--second-color);
 }
 
@@ -506,7 +509,7 @@ nav.white {
 }
 
 .form {
-    flex: 5;
+    flex: 6;
     flex-basis: auto;
     color: black;
     transition: .2s;
