@@ -13,7 +13,7 @@
     --second-color: #ff9a3d;
     --botton-border: 1;
     --info-left-margin: 30px;
-    --margin-horizontal: 75px;
+    --margin-horizontal: 7.5vw;
     --bg-color: #fff;
     --bg2-color: #f1f7f7;
     --nav-height: 50px;
@@ -72,7 +72,7 @@ nav.white {
     text-decoration: none;
     color: #515151;
     font-weight: 700;
-    font-size: 20px;
+    font-size: calc(10vw +10px);
 }
 
 .nav-elem {
@@ -84,6 +84,8 @@ nav.white {
     opacity: 1;
     color: var(--main-color);
 }
+
+
 
 #logo-text {
     /* border: green solid 1.5px; */
@@ -280,10 +282,12 @@ nav.white {
 
     border-right: dashed var(--main-color) 3px;
     flex: 1;
+    flex-basis: auto;
 }
 
 .personal+div {
     flex: 2;
+    flex-basis: auto;
 }
 
 .about-me ul {
@@ -325,7 +329,7 @@ nav.white {
 
 .skill-item {
     
-    flex: 1 1;
+    flex: 1 1 auto;
     border: solid red 1px;
     text-align: center;
 }
@@ -466,6 +470,7 @@ nav.white {
     /* width: 45%;
      */
      flex: 4;
+     flex-basis: aoto;
     background: var(--second-color);
     /* padding: 30px 0; */
     /* border-right: 5px solid rgba(30, 30, 30, .8); */
@@ -529,6 +534,7 @@ nav.white {
 .form {
     /* width: 60%; */
     flex: 5;
+    flex-basis: auto;
     /* padding: 30px 0; */
     color: black;
     /* background: rgba(20, 40, 40, .8); */
