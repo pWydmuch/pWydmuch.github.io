@@ -209,6 +209,7 @@ nav.white {
 .me-info {
     flex: 1 4 30%;
     margin-bottom: 10px;
+    padding-right: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
