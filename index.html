@@ -6,20 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Portfolio</title>
-  <!-- <link rel="stylesheet" href="css/fontello.css"> -->
   <link rel="stylesheet" href="styles.css">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+  <script src="app.js"></script>
 </head>
 
 <body>
   <header>
-    <nav id="myTopNav">
-      <div class="menu-icon">
-        <i class="demo-icon icon-list"></i>
-      </div>
-      <div id="logo-text" class="nav-elem">
+    <nav>
+      <div class="nav-elem logo-text">
         <img class="logo" src="images/comp.png" alt="logo">
         <p>Dev<p>
       </div>
@@ -29,16 +25,6 @@
         <li class="nav-elem"><a href="#portfolio">Portfolio</a></li>
         <li class="nav-elem"><a href="#contact">Contact</a></li>
       </ul>
-      <!-- <div class="dropdown">
-        <button class="dropbtn">Dropdown
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-      </div> -->
     </nav>
     <div class="big-image-container">
       <div class="hello">
@@ -52,8 +38,6 @@
         </div>
       </div>
   </header>
-
-
   <div class="help">
     <h2>I am happy to help you with any problem!</h2>
     <div class="help-buttons">
@@ -63,19 +47,21 @@
   </div>
   <h2 class="section-marker" id="about-me">About me</h2>
   <section class="about-me">
-    <div class="my-photo">
-      <img src="images/architecture.jpg">
+    <div class="me-info">
+      <div class="my-photo">
+        <img src="images/architecture.jpg">
+      </div>
+      <div class="personal">
+        <ul>
+          <li>Full Name: <span>Patryk Wydmuch</span></li>
+          <li>Age: <span>21 years</span></li>
+          <li>Profile: <span>Fullstack</span></li>
+          <li>Telephone: <span>123-456-789</span></li>
+          <li>Email: <span>lorem@lorem.pl</span></li>
+        </ul>
+      </div>
     </div>
-    <div class="personal">
-      <ul>
-        <li>Full Name: <span>Patryk Wydmuch</span></li>
-        <li>Age: <span>21 years</span></li>
-        <li>Profile: <span>Fullstack</span></li>
-        <li>Telephone: <span>123-456-789</span></li>
-        <li>Email: <span>lorem@lorem.pl</span></li>
-      </ul>
-    </div>
-    <div>
+    <div class="me-description">
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus veritatis modi explicabo illum officiis
         voluptatum tenetur unde, odit repudiandae commodi nemo laborum perferendis saepe dolores nobis iste ex eos
@@ -104,12 +90,11 @@
         <p>Java, Node.js</p>
       </div>
     </div>
-
   </section>
   <h2 class="section-marker" id="portfolio">Portfolio</h2>
   <section class="portfolio">
     <div class="portfolio-item photo-1">
-      <div class="p1">
+      <div>
         <h3>Design</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magni tempora provident nisi unde aliquam fugit,
           id praesentium quidem quod voluptates error possimus dolore porro vitae eaque molestiae aperiam inventore?
@@ -120,7 +105,7 @@
     <div class="portfolio-item photo-2"></div>
     <div class="portfolio-item photo-3"></div>
     <div class="portfolio-item photo-4">
-      <div class="p4">
+      <div>
         <h3>Design project</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id minima natus tempora adipisci harum a culpa non
           totam nisi sit!
@@ -179,14 +164,10 @@
         </ul>
       </form>
     </div>
-
     </form>
   </section>
-
   <footer>
     Copyrights &copy; 2019 Patryk Wydmuch
   </footer>
- 
 </body>
-
 </html>
