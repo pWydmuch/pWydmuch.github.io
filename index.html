@@ -15,6 +15,8 @@
 <body>
   <header>
     <nav>
+      <!-- CODE_REVIEW ta sama klasa dla logo i do linków? wygląda to dziwnie, ale jeśli miałeś w tym
+      jasny cel to ok -->
       <div class="nav-elem logo-text">
         <img class="logo" src="images/comp.png" alt="logo">
         <p>Dev<p>
@@ -31,6 +33,7 @@
         <h2 class="greeting">Welcome!</h2>
         <h4 class="introduction">My name is Patryk</h4>
         <div class="social-media">
+          <!-- CODE_REVIEW gdyby linki nie były atrapami to pamiętaj o targe="_blank" -->
           <a href="#"> <img src="images/twitter.png" alt="twitter"></a>
           <a href="#"> <img src="images/linkedin.png" alt="linkedin"></a>
           <a href="#"> <img src="images/github.png" alt="github"></a>
@@ -38,13 +41,16 @@
         </div>
       </div>
   </header>
+  <!-- CODE_REVIEW dałbym tutaj section -->
   <div class="help">
     <h2>I am happy to help you with any problem!</h2>
     <div class="help-buttons">
+      <!-- CODE_REVIEW trochę brak konsekwencji w nazywaniu klas -->
       <a href="#"> <button class="help-section-btn">Contact me!</button></a>
       <a href="#"> <button class="help-section-btn">Check my CV</button></a>
     </div>
   </div>
+  <!-- CODE_REVIEW tytuł sekcji powinien być wewnątrz tej sekcji -->
   <h2 class="section-marker" id="about-me">About me</h2>
   <section class="about-me">
     <div class="me-info">
@@ -72,6 +78,8 @@
     </div>
   </section>
   <h2 class="section-marker" id="skills">Skills</h2>
+  <!-- CODE_REVIEW o ile skills i skills-items jest spoko to przy skill-item już można się pogubić
+  może zamiast tego skills-wrapper i skills-item? -->
   <section class="skills">
     <div class="skills-items">
       <div class="skill-item">
@@ -145,6 +153,7 @@
         <h2><b>Let's start!</b></h2>
         <ul class="no-bullet">
           <li>
+            <!-- CODE_REVIEW value="" jest domyślne, wystarczy jedno id lub name -->
             <input type="text" class="input-fields" id="username" name="username" placeholder="Name" value=""
               required />
           </li>
@@ -171,3 +180,18 @@
   </footer>
 </body>
 </html>
+
+<!-- CODE_REVIEW -->
+<!-- Strona wygląda całkiem ładnie, RWD w większości jest. Ogólnie dobra robota. -->
+<!-- Ale przy małych szerokościach moim zdaniem zdjęcia w portfolio za bardzo się zwężają 
+i wyglądają nienaturalnie.-->
+<!-- Animacja po najechaniu na zdjęcie w portfolio jest jakaś dziwna. Chyba w jakiś sposób narusza
+grida, w którym siedzą te zdjęcia. Według mnie do zmiany. -->
+
+<!-- Ocena końcowa:
+  Code quality: 9.5/10
+  Design quality: 8.5/10
+  Business quality: 10/10
+  Features quality: 9/10
+  Razem: 37
+-->
