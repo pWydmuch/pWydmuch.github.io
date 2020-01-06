@@ -21,6 +21,8 @@ body {
 }
 
 /* BackgroundImage + Navbar */
+/* CODE_REVIEW lepiej unikać stylowania po tagach - najlepiej używać tylko przy stylach całkowicie globalnych.
+Może jak masz jeden header to wszystko działa, ale jakbyś dodał gdzieś kolejne to zaczną się problemy. */
 header {
     width: 100%;
     height: 100vh;
@@ -40,7 +42,7 @@ nav {
     height: var(--nav-height);
     background-color: var(--bg-color);
 }
-
+/* CODE_REVIEW to już lepiej */
 nav.white {
     opacity: 1;
     z-index: 2;
@@ -59,6 +61,7 @@ nav.white {
     text-decoration: none;
     color: #515151;
     font-weight: 700;
+    /* CODE_REVIEW użycie calc - bardzo w porządku */
     font-size: calc(1vw + 9px);
 }
 
@@ -553,7 +556,8 @@ textarea::-webkit-input-placeholder {
     list-style-type: none;
     padding: 0;
 }
-
+/* CODE_REVIEW stlowania po id też powinno się unikać. Takich styl trudno jest nadpisać - m. in. z poziomu js.
+Oprócz tego stylowanie po nie jest reużywalne */
 #send-btn {
     float: right;
     font-size: 18px;
